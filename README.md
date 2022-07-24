@@ -6,6 +6,15 @@ A [bounded context](https://martinfowler.com/bliki/BoundedContext.html) is a sub
 
 A Domain Message Flow Diagram is a simple visualisation showing the flow of messages (commands, events, queries) between actors, bounded contexts, and systems, for a single scenario.
 
+
+# مدل سازی جریان پیام دامنه
+
+طراحی سیستم‌های loosely-couple به چیزی بیش از مرزهایی که به دقت طراحی شده‌اند نیاز دارد. تعاملات با دقت تعریف شده بین Bounded Context ها  نیز به همان اندازه مهم است.
+
+یک [bounded context](https://martinfowler.com/bliki/BoundedContext.html) یک زیر سیستم در معماری نرم افزار است که با بخشی از دامنه تراز شده است. می توان آن را به عنوان یک میکروسرویس یا یک ماژول در یک مونولیت پیاده سازی کرد.
+
+نمودار جریان پیام دامنه یک رسم ساده است که جریان پیام ها (دستورات، رویدادها، پرس و جوها) را بین بازیگران، Bounded Contextها و سیستم ها برای یک سناریو نشان می دهد.
+
 ## Formats
 
 There are 2 basic formats, but there is no formal specification so adjust the tool to suit your needs if the basic formats don't work for you.
@@ -31,6 +40,36 @@ The combined message & contents format uses a single shape to capture the messag
 ![Example Message Flow](resources/domain-message-flow.jpg "An Example Domain Message Flow")
 
 This format is good when you want to focus on the contents of each message from the beginning.
+
+
+
+## فرمت ها
+
+2 فرمت اصلی وجود دارد، اما هیچ مشخصات رسمی وجود ندارد، بنابراین اگر فرمت های اصلی برای شما کار نمی کنند، ابزار را مطابق با نیازهای خود تنظیم کنید.
+
+### پیام و محتوا را جدا کنید
+
+قالب جداگانه پیام و محتوا از 2 شکل برای هر پیام استفاده می کند: 1 برای نام و ترتیب پیام و یک کادر جداگانه برای نمایش محتوای پیام (اطلاعاتی که حمل می کند).
+
+مزیت این فرمت این است که می توانید روی جریان پیام ها تمرکز کنید بدون اینکه در ابتدا درگیر محتوای پیام شوید.
+
+فقط با نشان دادن پیام هایی که بین فرستنده و گیرنده جریان دارند (با شماره سفارش روی پیام) شروع کنید.
+
+![Message Flow Just Messages](resources/just-messages-no-contents.jpg)
+
+سپس محتویات هر پیام را در یک کادر جداگانه در کنار هر پیام نشان دهید:
+
+![Message Flow Messages & Contents](resources/messages-and-contents.jpg)
+
+### پیام و محتویات ترکیبی
+
+قالب ترکیبی پیام و محتوا از یک شکل واحد برای ثبت نام، سفارش و محتوای پیام استفاده می کند.
+
+![نمونه جریان پیام](resources/domain-message-flow.jpg "An Example Domain Message Flow")
+
+این قالب زمانی خوب است که بخواهید از ابتدا روی محتوای هر پیام تمرکز کنید.
+
+
 
 ### Downloads
 
