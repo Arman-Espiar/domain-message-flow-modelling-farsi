@@ -95,6 +95,30 @@ The message should contain 3 elements:
 2. The significant data contained within the message
 3. The order in which the message occurs in the flow being modelled
 
+
+
+## نحوه استفاده
+
+هنگامی که یک برش اولیه از معماری خود دارید - زمینه های محدود نامزد را شناسایی کرده اید - می توانید طراحی جریان پیام را شروع کنید.
+
+با ایجاد لیستی از سناریوها برای مدل سازی شروع کنید. و سپس برای هر سناریو یک نمودار ایجاد کنید
+
+هنگام ایجاد یک نمودار، جریان معمولی به صورت زیر است:
+
+1. با یک بازیگر/Context/سیستم شروع کنید
+2. پیامی را که می خواهند ارسال کنند ایجاد کنید
+3. گیرنده پیام و خطی که فرستنده و گیرنده را به هم متصل می کند اضافه کنید
+4. پیام را نزدیک خط قرار دهید
+5. مراحل 1 تا 4 را تکرار کنید تا سناریوی شما کامل شود
+
+پیام باید شامل 3 عنصر باشد:
+
+1. نام پیام
+2. داده های مهم موجود در پیام
+3. ترتیبی که پیام در جریان مدل سازی رخ می دهد
+
+
+
 ## Visualisation Tips
 
 The number one problem with Domain Message Flow Diagrams, and diagrams in general, is too much information. [Miller's Law](https://en.wikipedia.org/wiki/Miller%27s_law) is a good heuristic to use here. Aim to have between 5 and 9 messages on your diagram.
